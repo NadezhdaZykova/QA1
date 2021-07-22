@@ -20,7 +20,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public  void should0(){
-        assertEquals(cashbackHackService.remain(0), 1000);
+        assertEquals(cashbackHackService.remain(1000), 0);
     }
 
 
