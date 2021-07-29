@@ -9,18 +9,18 @@ public class CashbackHackServiceTest {
     CashbackHackService cashbackHackService = new CashbackHackService();
 
     @Test
-    public void shouldUnder1000 (){
-        assertEquals(cashbackHackService.remain(750), 250);
+    public void shouldUnder1000() {
+        assertEquals(250, cashbackHackService.remain(750));
     }
 
     @Test
-    public void shouldBelow1000(){
-        assertEquals(cashbackHackService.remain(5100), 900);
+    public void shouldBelow1000() {
+        assertEquals(900, cashbackHackService.remain(5100));
     }
 
     @Test
-    public  void should0(){
-        assertEquals(cashbackHackService.remain(1000), 0);
+    public void should0() {
+        assertEquals(0, cashbackHackService.remain(1000));
     }
 
 
